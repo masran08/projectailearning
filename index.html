@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media Interaktif Pengenalan Artificial Intelligence (AI) untuk pelajar, mahasiswa, dan masyarakat umum.">
+    <title>AI Learning | Media Interaktif Pengenalan AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGASI -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="brand" onclick="showPage('beranda'); return false;">
+                <span class="brand-icon">AI</span>
+                <span>AI<span class="brand-light">Learning</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="#" class="nav-link active" data-page="beranda">Beranda</a>
+                <a href="#" class="nav-link" data-page="mengenal">Mengenal AI</a>
+                <a href="#" class="nav-link" data-page="cara-kerja">Cara Kerja AI</a>
+                <a href="#" class="nav-link" data-page="penerapan">Penerapan AI</a>
+                <a href="#" class="nav-link" data-page="manfaat">Manfaat & Tantangan</a>
+                <a href="#" class="nav-link" data-page="kuis">Kuis</a>
+                <a href="#" class="nav-link" data-page="tentang">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HALAMAN BERANDA -->
+        <section id="beranda" class="page active">
+            <div class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <span class="eyebrow">MEDIA PEMBELAJARAN INTERAKTIF</span>
+                        <h1>Kenali Dunia <span class="gradient-text">Artificial Intelligence</span></h1>
+                        <p>
+                            Pelajari bagaimana kecerdasan buatan bekerja,
+                            manfaatnya dalam kehidupan, serta tantangan
+                            yang perlu kita pahami di era digital.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" onclick="showPage('mengenal')">
+                                Mulai Belajar <span>→</span>
+                            </button>
+                            <button class="btn btn-outline" onclick="showPage('kuis')">
+                                Coba Kuis
+                            </button>
+                        </div>
+                        <div class="hero-note">
+                            <span class="status-dot"></span>
+                            Belajar AI dengan cara yang mudah dan interaktif
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                        <div class="ai-core">
+                            <span>AI</span>
+                            <small>INTELLIGENCE</small>
+                        </div>
+                        <div class="float-card card-top">✦ Machine Learning</div>
+                        <div class="float-card card-left">◈ Data Processing</div>
+                        <div class="float-card card-right">⌘ Neural Network</div>
+                        <div class="float-card card-bottom">✧ Smart Technology</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container section-space">
+                <div class="section-heading">
+                    <span class="eyebrow">MULAI DARI SINI</span>
+                    <h2>Jelajahi Materi AI</h2>
+                    <p>Temukan berbagai materi dasar untuk memahami teknologi kecerdasan buatan.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card" onclick="showPage('mengenal')">
+                        <div class="feature-icon blue">✦</div>
+                        <h3>Mengenal AI</h3>
+                        <p>Pelajari pengertian, sejarah, karakteristik, dan jenis kecerdasan buatan.</p>
+                        <span class="card-link">Pelajari materi →</span>
+                    </article>
+
+                    <article class="feature-card" onclick="showPage('cara-kerja')">
+                        <div class="feature-icon purple">⌘</div>
+                        <h3>Cara Kerja AI</h3>
+                        <p>Kenali tahapan input, pemrosesan, pembelajaran, hingga menghasilkan output.</p>
+                        <span class="card-link">Pelajari materi →</span>
+                    </article>
+
+                    <article class="feature-card" onclick="showPage('penerapan')">
+                        <div class="feature-icon cyan">◈</div>
+                        <h3>Penerapan AI</h3>
+                        <p>Temukan contoh penggunaan AI dalam berbagai bidang kehidupan.</p>
+                        <span class="card-link">Pelajari materi →</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN MENGENAL AI -->
+        <section id="mengenal" class="page">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="eyebrow">MATERI 01</span>
+                    <h1>Mengenal Artificial Intelligence</h1>
+                    <p>Memahami dasar kecerdasan buatan dan perkembangannya.</p>
+                </div>
+            </div>
+
+            <div class="container content-section">
+                <div class="content-grid">
+                    <div>
+                        <span class="eyebrow">PENGERTIAN</span>
+                        <h2>Apa Itu Artificial Intelligence?</h2>
+                        <p>
+                            Artificial Intelligence (AI) atau kecerdasan buatan
+                            merupakan bidang ilmu komputer yang berfokus pada
+                            pengembangan sistem agar mampu melakukan tugas yang
+                            biasanya membutuhkan kecerdasan manusia.
+                        </p>
+                        <p>
+                            Contohnya meliputi mengenali suara, memahami bahasa,
+                            mengidentifikasi gambar, mempelajari pola data, dan
+                            membantu proses pengambilan keputusan.
+                        </p>
+                    </div>
+                    <div class="illustration-panel">
+                        <img
+                            src="assets/images/ai-assistant.jpeg"
+                            alt="Ilustrasi asisten kecerdasan buatan"
+                            style="display:block; width:100%; max-width:420px; height:230px; object-fit:cover; border-radius:18px; margin:0 auto 18px;"
+                        >
+                        <h3>Artificial Intelligence</h3>
+                        <p>Teknologi yang membantu komputer melakukan tugas cerdas.</p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <span class="eyebrow">SEJARAH SINGKAT</span>
+                    <h2>Perkembangan Kecerdasan Buatan</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-year">1950</span>
+                            <div><h3>Gagasan Awal</h3><p>Alan Turing memperkenalkan gagasan pengujian kemampuan mesin untuk menunjukkan perilaku cerdas.</p></div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">1956</span>
+                            <div><h3>Istilah Artificial Intelligence</h3><p>Istilah Artificial Intelligence digunakan dalam kegiatan penelitian Dartmouth.</p></div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">Modern</span>
+                            <div><h3>Perkembangan AI</h3><p>AI berkembang melalui machine learning, deep learning, dan generative AI.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <span class="eyebrow">KARAKTERISTIK DAN JENIS</span>
+                    <h2>Karakteristik AI</h2>
+                    <div class="feature-grid">
+                        <article class="feature-card">
+                            <div class="feature-icon blue">◉</div>
+                            <h3>Pembelajaran</h3>
+                            <p>Mempelajari pola dari data yang tersedia.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon purple">◇</div>
+                            <h3>Penalaran</h3>
+                            <p>Mengolah informasi untuk menghasilkan kesimpulan.</p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon cyan">⌕</div>
+                            <h3>Pemecahan Masalah</h3>
+                            <p>Membantu menyelesaikan tugas berdasarkan informasi.</p>
+                        </article>
+                    </div>
+                    <h2 class="subheading">Jenis AI Berdasarkan Kemampuannya</h2>
+                    <div class="info-grid">
+                        <div class="info-card"><h3>Narrow AI</h3><p>AI yang dirancang untuk menjalankan tugas tertentu, seperti rekomendasi film atau pengenalan wajah.</p></div>
+                        <div class="info-card"><h3>General AI</h3><p>Konsep AI yang memiliki kemampuan intelektual umum setara manusia. Belum terwujud sebagai sistem AI nyata.</p></div>
+                        <div class="info-card"><h3>Super AI</h3><p>Konsep hipotetis AI yang kecerdasannya melampaui kemampuan manusia.</p></div>
+                    </div>
+                </div>
+
+                <div class="audio-narration">
+                    <h3><i class="fas fa-volume-up"></i> Dengarkan Penjelasan</h3>
+                    <p>Narasi pengenalan Artificial Intelligence</p>
+                    <audio controls preload="metadata">
+                        <source src="assets/audio/narasi-pengenalan-ai.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN CARA KERJA AI -->
+        <section id="cara-kerja" class="page">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="eyebrow">MATERI 02</span>
+                    <h1>Bagaimana AI Bekerja?</h1>
+                    <p>Kenali tahapan dasar sistem kecerdasan buatan dalam mengolah informasi.</p>
+                </div>
+            </div>
+
+            <div class="container content-section">
+                <div class="section-heading">
+                    <span class="eyebrow">ALUR KERJA</span>
+                    <h2>Empat Tahapan Dasar AI</h2>
+                    <p>Pilih setiap tahapan untuk melihat penjelasannya.</p>
+                </div>
+
+                <div class="process-grid">
+                    <button class="process-card selected" onclick="selectProcess(0)">
+                        <span class="process-number">01</span><span class="process-symbol">⌁</span>
+                        <h3>Input</h3><p>Data masuk</p>
+                    </button>
+                    <button class="process-card" onclick="selectProcess(1)">
+                        <span class="process-number">02</span><span class="process-symbol">⚙</span>
+                        <h3>Pemrosesan</h3><p>Data dianalisis</p>
+                    </button>
+                    <button class="process-card" onclick="selectProcess(2)">
+                        <span class="process-number">03</span><span class="process-symbol">✧</span>
+                        <h3>Pembelajaran</h3><p>Pola dipelajari</p>
+                    </button>
+                    <button class="process-card" onclick="selectProcess(3)">
+                        <span class="process-number">04</span><span class="process-symbol">↗</span>
+                        <h3>Output</h3><p>Hasil diberikan</p>
+                    </button>
+                </div>
+
+                <div class="process-detail" id="processDetail">
+                    <span class="eyebrow">TAHAP 01</span>
+                    <h2>Input Data</h2>
+                    <p>AI menerima masukan berupa teks, gambar, suara, atau data lainnya sebagai bahan untuk diproses.</p>
+                </div>
+
+                <div class="ai-animation">
+                    <h3>Animasi Proses Kerja Artificial Intelligence</h3>
+
+                    <p>
+                        Perhatikan bagaimana Artificial Intelligence
+                        mengolah data hingga menghasilkan suatu keluaran.
+                    </p>
+
+                    <img
+                        src="assets/animation/animasi-proses-kerja-ai.gif"
+                        alt="Animasi empat tahapan proses kerja Artificial Intelligence"
+                    >
+
+                    <p class="animation-caption">
+                        Input → Pemrosesan → Pembelajaran → Output
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Contoh Sederhana</h2>
+                    <p>Ketika pengguna mengunggah foto, sistem AI dapat menerima gambar tersebut sebagai input, menganalisis karakteristiknya, lalu memberikan hasil pengenalan objek sebagai output.</p>
+                    <div class="example-flow">
+                        <div>📷<strong>Foto</strong><small>Input</small></div>
+                        <span>→</span>
+                        <div>⚙️<strong>Analisis</strong><small>Pemrosesan</small></div>
+                        <span>→</span>
+                        <div>🧠<strong>Pengenalan</strong><small>Pembelajaran</small></div>
+                        <span>→</span>
+                        <div>💡<strong>Hasil</strong><small>Output</small></div>
+                    </div>
+                </div>
+
+                <div class="audio-narration">
+                    <h3>Dengarkan Penjelasan</h3>
+                    <p>Narasi tahapan cara kerja Artificial Intelligence</p>
+                    <audio controls preload="metadata">
+                        <source src="assets/audio/narasi-cara-kerja-ai.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN PENERAPAN AI -->
+        <section id="penerapan" class="page">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="eyebrow">MATERI 03</span>
+                    <h1>Penerapan AI dalam Kehidupan</h1>
+                    <p>Kecerdasan buatan telah digunakan dalam berbagai aktivitas sehari-hari.</p>
+                </div>
+            </div>
+
+            <div class="container content-section">
+                <div class="section-heading">
+                    <span class="eyebrow">CONTOH PENGGUNAAN</span>
+                    <h2>AI di Berbagai Bidang</h2>
+                    <p>Pilih bidang berikut untuk mengenal contoh penerapannya.</p>
+                </div>
+
+                <div class="application-grid">
+                    <article class="application-card">
+                        <div class="application-visual education">
+                            <img src="assets/images/ai-education.jpeg" alt="Penerapan AI dalam bidang pendidikan" style="display:block; width:100%; height:190px; object-fit:cover;">
+                        </div>
+                        <div class="application-body"><span class="tag">PENDIDIKAN</span><h3>Pembelajaran Adaptif</h3><p>AI membantu memberikan rekomendasi materi dan latihan berdasarkan kebutuhan belajar pengguna.</p></div>
+                    </article>
+
+                    <article class="application-card">
+                        <div class="application-visual health">
+                            <img src="assets/images/ai-healthcare.jpeg" alt="Penerapan AI dalam bidang kesehatan" style="display:block; width:100%; height:190px; object-fit:cover;">
+                        </div>
+                        <div class="application-body"><span class="tag">KESEHATAN</span><h3>Analisis Medis</h3><p>AI dapat membantu tenaga medis menganalisis citra medis dan mendukung proses pemeriksaan.</p></div>
+                    </article>
+
+                    <article class="application-card">
+                        <div class="application-visual transport">
+                            <img src="assets/images/ai-transport.jpeg" alt="Penerapan AI dalam bidang transportasi" style="display:block; width:100%; height:190px; object-fit:cover;">
+                        </div>
+                        <div class="application-body"><span class="tag">TRANSPORTASI</span><h3>Navigasi Cerdas</h3><p>AI membantu memperkirakan kondisi lalu lintas dan menyarankan rute perjalanan.</p></div>
+                    </article>
+
+                    <article class="application-card">
+                        <div class="application-visual daily">
+                            <img src="assets/images/ai-assistant.jpeg" alt="Asisten virtual berbasis kecerdasan buatan" style="display:block; width:100%; height:190px; object-fit:cover;">
+                        </div>
+                        <div class="application-body"><span class="tag">KEHIDUPAN SEHARI-HARI</span><h3>Asisten Virtual</h3><p>AI digunakan untuk memahami perintah suara, memberikan informasi, dan merekomendasikan konten.</p></div>
+                    </article>
+                </div>
+
+                <div class="video-section">
+                    <div class="video-heading">
+                        <span class="eyebrow">VIDEO PEMBELAJARAN</span>
+                        <h2>Demonstrasi Penerapan Artificial Intelligence</h2>
+                        <p>
+                            Simak video berikut untuk memahami lebih dalam
+                            perkembangan dan penerapan kecerdasan buatan.
+                        </p>
+                    </div>
+
+                    <div class="video-container">
+                        <video controls preload="metadata" playsinline>
+                            <source src="assets/video/ai-learning.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung pemutaran video.
+                        </video>
+                    </div>
+
+                    <p class="video-caption">
+                        Video Pembelajaran AI Learning
+                    </p>
+                </div>
+
+                <div class="audio-narration">
+                    <h3>Dengarkan Penjelasan</h3>
+                    <p>Narasi penerapan AI dalam kehidupan sehari-hari</p>
+                    <audio controls preload="metadata">
+                        <source src="assets/audio/narasi-penerapan-ai.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN MANFAAT DAN TANTANGAN -->
+        <section id="manfaat" class="page">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="eyebrow">MATERI 04</span>
+                    <h1>Manfaat dan Tantangan AI</h1>
+                    <p>Memahami peluang dan risiko penggunaan kecerdasan buatan.</p>
+                </div>
+            </div>
+
+            <div class="container content-section">
+                <div class="content-grid">
+                    <div>
+                        <span class="eyebrow">MANFAAT AI</span>
+                        <h2>Bagaimana AI Membantu Manusia?</h2>
+                        <p>AI dapat mendukung berbagai aktivitas dengan membantu mengolah informasi, mengotomatisasi tugas, dan meningkatkan efisiensi pekerjaan.</p>
+                        <ul class="check-list">
+                            <li><span>✓</span> Membantu meningkatkan efisiensi pekerjaan.</li>
+                            <li><span>✓</span> Mengotomatisasi tugas yang berulang.</li>
+                            <li><span>✓</span> Membantu mengolah informasi dalam jumlah besar.</li>
+                            <li><span>✓</span> Mendukung proses analisis dan pengambilan keputusan.</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-visual"><div class="benefit-symbol">✦</div><h3>Teknologi untuk Mendukung Aktivitas</h3><p>AI menjadi alat bantu yang dapat dimanfaatkan secara tepat.</p></div>
+                </div>
+
+                <div class="content-block">
+                    <span class="eyebrow">TANTANGAN AI</span>
+                    <h2>Hal yang Perlu Diwaspadai</h2>
+                    <div class="info-grid">
+                        <div class="info-card warning"><span class="warning-icon">🔒</span><h3>Privasi dan Keamanan</h3><p>Penggunaan data pribadi perlu memperhatikan keamanan dan izin pengguna.</p></div>
+                        <div class="info-card warning"><span class="warning-icon">⚖️</span><h3>Bias Algoritma</h3><p>Data yang tidak seimbang dapat menghasilkan keputusan atau rekomendasi yang bias.</p></div>
+                        <div class="info-card warning"><span class="warning-icon">ⓘ</span><h3>Informasi Keliru</h3><p>AI dapat menghasilkan informasi yang tidak akurat sehingga perlu diperiksa kembali.</p></div>
+                    </div>
+                </div>
+
+                <div class="responsible-box">
+                    <span class="eyebrow">PENGGUNAAN BIJAKSANA</span>
+                    <h2>Gunakan AI secara Bertanggung Jawab</h2>
+                    <p>Periksa kembali informasi yang dihasilkan AI, lindungi data pribadi, pahami keterbatasannya, dan jangan menjadikan AI sebagai satu-satunya dasar pengambilan keputusan.</p>
+                </div>
+
+                <div class="audio-narration">
+                    <h3>Dengarkan Penjelasan</h3>
+                    <p>Narasi manfaat dan tantangan Artificial Intelligence</p>
+                    <audio controls preload="metadata">
+                        <source src="assets/audio/narasi-manfaat-tantangan-ai.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN KUIS -->
+        <section id="kuis" class="page">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="eyebrow">EVALUASI PEMBELAJARAN</span>
+                    <h1>Kuis Interaktif AI</h1>
+                    <p>Uji pemahamanmu setelah mempelajari materi pengenalan AI.</p>
+                </div>
+            </div>
+
+            <div class="container quiz-container">
+                <div class="quiz-card" id="quizCard">
+                    <div class="quiz-top">
+                        <span class="tag">10 SOAL PILIHAN GANDA</span>
+                        <span id="questionCounter">Soal 1 dari 10</span>
+                    </div>
+                    <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+                    <h2 id="questionText">Apa kepanjangan dari AI?</h2>
+                    <div class="answer-list" id="answerList"></div>
+                    <div id="feedback" class="feedback"></div>
+                    <div class="quiz-actions">
+                        <span id="answeredText">Pilih satu jawaban yang benar.</span>
+                        <button class="btn btn-primary" id="nextQuestion" disabled>Selanjutnya →</button>
+                    </div>
+                </div>
+
+                <div class="result-card hidden" id="resultCard">
+                    <div class="result-icon">🏆</div>
+                    <span class="eyebrow">KUIS SELESAI</span>
+                    <h2>Hasil Pembelajaranmu</h2>
+                    <div class="score-circle"><strong id="finalScore">0</strong><span>/ 100</span></div>
+                    <p id="resultMessage"></p>
+                    <button class="btn btn-primary" onclick="restartQuiz()">Ulangi Kuis ↻</button>
+                    <button class="btn btn-outline" onclick="showPage('beranda')">Kembali ke Beranda</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN TENTANG -->
+        <section id="tentang" class="page">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="eyebrow">INFORMASI PRODUK</span>
+                    <h1>Tentang AI Learning</h1>
+                    <p>Media interaktif untuk mengenal dasar-dasar Artificial Intelligence.</p>
+                </div>
+            </div>
+
+            <div class="container content-section">
+                <div class="about-panel">
+                    <div class="about-logo">AI</div>
+                    <div>
+                        <span class="eyebrow">MEDIA PEMBELAJARAN</span>
+                        <h2>Media Interaktif Pengenalan Artificial Intelligence (AI)</h2>
+                        <p>AI Learning dikembangkan sebagai media informasi dan pembelajaran untuk membantu pengguna pemula memahami pengertian, cara kerja, penerapan, manfaat, serta tantangan kecerdasan buatan.</p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Identitas Pengembang</h2>
+                    <div class="member-list">
+                        <div class="member-item"><span>01</span><strong>Mas Rana Fauzi Hidayat</strong><small>10123650</small></div>
+                        <div class="member-item"><span>02</span><strong>Muhamad Farhan Rahma Putra</strong><small>10123715</small></div>
+                        <div class="member-item"><span>03</span><strong>Muhammad Raffi Aripratama</strong><small>10123863</small></div>
+                        <div class="member-item"><span>04</span><strong>Nafi Fathurohim</strong><small>10123957</small></div>
+                        <div class="member-item"><span>05</span><strong>Ramadhan Maulana</strong><small>11123112</small></div>
+                    </div>
+                    <div class="institution"> 
+                        <strong>Kelompok 5 — 4KA33</strong>
+                        <p>Program Studi Sistem Informasi<br>Fakultas Ilmu Komputer & Teknologi Informasi<br>Universitas Gunadarma<br>2026/2027</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="brand" onclick="showPage('beranda'); return false;">
+                <span class="brand-icon">AI</span>
+                <span>AI<span class="brand-light">Learning</span></span>
+            </a>
+            <p>Media Interaktif Pengenalan Artificial Intelligence (AI)</p>
+            <small>© 2026 Kelompok 5 — 4KA33 | Universitas Gunadarma</small>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
